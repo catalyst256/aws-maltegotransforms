@@ -70,24 +70,24 @@ class MaltegoEntity(object):
         if (iU is not None):
             self.iconURL = iU
 
-        def setLinkColor(self, color):
-            self.addProperty('link#maltego.link.color', 'LinkColor', '', color)
+    def setLinkColor(self, color):
+        self.addProperty('link#maltego.link.color', 'LinkColor', '', color)
 
-        def setLinkStyle(self, style):
-            self.addProperty('link#maltego.link.style', 'LinkStyle', '', style)
+    def setLinkStyle(self, style):
+        self.addProperty('link#maltego.link.style', 'LinkStyle', '', style)
 
-        def setLinkThickness(self, thick):
-            self.addProperty('link#maltego.link.thickness',
-                             'Thickness', '', str(thick))
+    def setLinkThickness(self, thick):
+        self.addProperty('link#maltego.link.thickness',
+                         'Thickness', '', str(thick))
 
-        def setLinkLabel(self, label):
-            self.addProperty('link#maltego.link.label', 'Label', '', label)
+    def setLinkLabel(self, label):
+        self.addProperty('link#maltego.link.label', 'Label', '', label)
 
-        def setBookmark(self, bookmark):
-            self.addProperty('bookmark#', 'Bookmark', '', bookmark)
+    def setBookmark(self, bookmark):
+        self.addProperty('bookmark#', 'Bookmark', '', bookmark)
 
-        def setNote(self, note):
-            self.addProperty('notes#', 'Notes', '', note)
+    def setNote(self, note):
+        self.addProperty('notes#', 'Notes', '', note)
 
     def returnEntity(self):
         r = ''
